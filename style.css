@@ -1,0 +1,447 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    background-color: #EFEAE3;
+    /* border: 1px solid red; */
+    overflow-x: hidden;  
+}
+header{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.empty{
+    position: absolute;
+    z-index: -3;
+    background-color: black;
+    border-radius: 20px;
+    width: 80px;
+    height: 45px;
+    top: 44px;
+    left: 1132px;
+   display: none;
+   animation: linkmove 200ms linear;
+}.empty1{
+    position: absolute;
+    z-index: -3;
+    background-color: black;
+    border-radius: 20px;
+    width: 90px;
+    height: 45px;
+    top: 44px;
+    left: 1260px;
+   display: none;
+   animation: linkmove 200ms linear;
+}
+.empty2{
+    position: absolute;
+    z-index: -3;
+    background-color: black;
+    border-radius: 20px;
+    width: 99px;
+    height: 45px;
+    top: 44px;
+    left: 1390px;
+    display: none;
+    animation: linkmove 200ms linear;
+}
+.links{
+    /* border: 1px solid blue; */
+    background-color: transparent;
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.linkitem{
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.work{
+    /* border: 1px solid green; */
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.work:hover .a{
+    color: white;
+}
+.main1{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    z-index: -2;
+    width: 80px;
+    height: 45px;
+    display: flex;
+    overflow: hidden;
+    &:hover{
+        overflow: hidden;
+        color: white;
+    }
+}
+.work:hover .empty{
+    display: block;
+    z-index: -1;
+}
+
+/* Two; */
+.studio{
+    /* border: 1px solid green; */
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.studio:hover .a{
+    color: white;
+}
+.main2{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    z-index: -2;
+    width: 90px;
+    height: 45px;
+    display: flex;
+    overflow: hidden;
+    &:hover{
+        overflow: hidden;
+        color: white;
+    }
+}
+.studio:hover .empty1{
+    display: block;
+    z-index: -1;
+}
+/* threee */
+.contact{
+    /* border: 1px solid green; */
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.contact:hover .a{
+    color: white;
+}
+.main3{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    z-index: -2;
+    width: 100px;
+    height: 45px;
+    display: flex;
+    overflow: hidden;
+    &:hover{
+        overflow: hidden;
+        color: white;
+    }
+}
+.contact:hover .empty2{
+    display: block;
+    z-index: -1;
+}
+
+.linkitem .a{
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: black;
+    &:hover{
+        color: white;
+    }
+}
+
+@keyframes linkmove{
+    0%{
+        transform: translatey(30px);
+    }
+    100%{}
+}
+.banner{
+    border-bottom: 1px solid rgb(188, 186, 186);
+    height: 35rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.leftcontent{
+    padding-top: 200px;
+}
+.left{
+    font-size: 30px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+.right{
+    font-weight: bold;
+    margin-top: 150px;
+    margin-right: 50px;
+    font-size: 130px;
+    line-height: 110px;
+}
+.middle{
+    overflow-x: hidden;
+    width: 1000px;
+    height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.dotparent{
+    position: absolute;
+    top: 520px;
+    z-index: 1;
+    left: 850px;
+    overflow-x: hidden;
+    width: 700px;
+}
+.reddot{
+    margin: 80px;
+    z-index: 1;
+    left: 800px;
+    width: 60rem;
+    height: 40rem;
+    background-color: red;
+    border-radius: 40%;
+    box-shadow: 1px 1px 100px red;
+    filter: blur(30px);
+}
+.video1{
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    left:40px;
+    top: 720px;
+    border-radius: 40px;
+}
+.divmarquee{
+}
+.ulmarquee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sitems{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0px;
+    font-size: 140px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+.belowcontent{
+    /* margin-left: 50px; */
+    width: 100%;
+    height: 45rem;
+    display: flex;
+}
+.backdot{
+    position: absolute;
+    z-index: -1;
+    width: 500px;
+    height: 450px;
+    left: 320px;
+    top: 2050px;
+    background-color: orangered;
+    box-shadow: 1px 1px 50px orange;
+    border-radius:40%;
+    filter: blur(20px);
+    animation: movedot 6s linear infinite alternate;
+}
+@keyframes movedot{
+    0%{transform: translatey(80px) skew(-3deg);}
+    100%{ transform: translate(80px);}
+}
+.lcont{
+    width: 180rem;
+    background-color: transparent;
+    font-size: 63px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    word-spacing: -4px;
+    line-height: 60px;
+    padding: 80px 80px;
+}
+.rcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+}
+.combdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 300px;
+}
+.rcont img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.rcont p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.hovingdiv{
+    /* border: 1px solid black; */
+    height: 60rem;
+}
+.hovingul{
+    width: 1520px;
+    padding-left: 35px;
+    padding-right: 5px;
+}
+.hovingitems{
+    border-bottom: 1px solid rgb(207, 205, 205) ;
+    /* border: 1px solid black; */
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftp{
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+.blanked{
+    position: absolute;
+    width: 98.7%;
+    height: 7rem;
+    background-color: rgb(255, 134, 53);
+    display: none;
+}
+.hoverimage{
+    position: absolute;
+    display: none;
+    background-color: gray;
+    left: 750px;
+    top: 2750px;
+    width: 380px;
+    height: 450px;
+    border-radius:20px ;
+}
+.hitem1:hover .hoverimage{
+    display: block;
+    background-image:url(./1.webp);
+    background-size: cover;
+}
+.hitem2:hover .hoverimage{
+    display: block;
+    background-image:url(./2.webp);
+    background-size: cover;
+}
+.hitem3:hover .hoverimage{
+    display: block;
+    background-image:url(./3.webp);
+    background-size: cover;
+}
+.hitem4:hover .hoverimage{
+    display: block;
+    background-image:url(./4.webp);
+    background-size: cover;
+}
+.hitem5:hover .hoverimage{
+    display: block;
+    background-image:url(./5.webp);
+    background-size: cover;
+}.hitem6:hover .hoverimage{
+    display: block;
+    background-image:url(./6.webp);
+    background-size: cover;
+}.hitem7:hover .hoverimage{
+    display: block;
+    background-image:url(./7.webp);
+    background-size: cover;
+}
+.hitem1:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem2:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem3:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem4:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem5:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem6:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem7:hover .blanked{
+    display: block;
+    z-index: -2;
+    left: 35px;
+    animation: updown 100ms linear alternate ;
+}
+.hitem2:hover {
+
+}
+@keyframes updown{
+    0%{
+        height: 50px;
+        transform: translatey(-10px);}
+    100%{height: 100px;
+        transform: translatey(-10px);}  
+}
+.hovingitems:hover{
+
+}
+footer{
+    width: 100vw;
+    height: 50rem;
+    background-color: gray;
+    background-image: url(./footer.PNG);
+    background-attachment: fixed;
+    background-size: cover;
+}
